@@ -35,7 +35,7 @@ myButton.addEventListener('click', () => {
         }
 
         alert(`Quiz complete!  Your score will now show on the webpage.`);
+        myScore.innerHTML = `You completed the quiz ${userName}!  Your score is ${total}/3.`;
     }
-    myScore.innerHTML = `You completed the quiz ${userName}!  Your score is ${myScore}/3.`;
     return;
 });
