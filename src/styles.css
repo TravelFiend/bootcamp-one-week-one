@@ -46,11 +46,11 @@ hr {
     margin: 30px;
 }
 
-hgroup {
+hgroup, h3 {
     text-align: center;
     text-shadow: 0 0 10px #E0E5E7;
-    background: #3CA5CB;
-    box-shadow: 0 0 10px 20px #3CA5CB;
+    background: rgba(60, 165, 203, .5);
+    box-shadow: 0 0 10px 20px rgba(60, 165, 203, .5);
 }
 
 .picWords {
@@ -80,4 +80,20 @@ p {
     display: flex;
     align-items: center;
     flex-direction: column;
+}
+
+#myButton {
+    display: flex;
+    justify-content: center;
+}
+
+button {
+    background-color: #9FBDB1;
+    height: 50px;
+    width: 200px;
+    font-size: 1.5em;
+    border-radius: 8px;
+    text-shadow: 0 0 10px #E0E5E7;
+    border: 2px solid #2D504E;
+    box-shadow: inset -3px -3px 10px #2D504E;
 }

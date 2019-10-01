@@ -1,1 +1,1 @@
-import './is-yes.test.js/index.js';
+import './is-yes.test.js';
