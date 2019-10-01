@@ -3,7 +3,7 @@ const myButton = document.getElementById('quiz-button');
 const myQuizResults = document.getElementById('quizResults');
 const myScore = document.getElementById('score');
 let total = 0;
-let percent
+let percent;
 
 myButton.addEventListener('click', () => {
     alert('Welcome to my quiz!');
