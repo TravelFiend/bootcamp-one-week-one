@@ -2,10 +2,10 @@ import { isYes } from './is-yes.js';
 const myButton = document.getElementById('quiz-button');
 const myQuizResults = document.getElementById('quizResults');
 const myScore = document.getElementById('score');
-let total = 0;
-let percent;
+
 
 myButton.addEventListener('click', () => {
+    let total = 0;
     alert('Welcome to my quiz!');
     
     const userName = prompt('What is your name?');
@@ -34,8 +34,12 @@ myButton.addEventListener('click', () => {
             total++;
         }
 
-        alert(`Quiz complete!  Your score will now show on the webpage.`);
-        myScore.innerHTML = `You completed the quiz ${userName}!  Your score is ${total}/3.`;
+        let percent = Math.round((total / 3) * 100);
+        if (percent < 70){
+            quizResults.style.color = "red";
+        }
+        alert(`Quiz complete!  Your score will now appear at the bottom of the webpage.`);
+        myScore.textContent = `You completed the quiz ${userName}!  Your score is ${total}/3 --- ${percent}%!!!`;
     }
     return;
 });
