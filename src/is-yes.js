@@ -5,4 +5,4 @@ export const isYes = (userAnswer) => {
         return true;
     }
     return false;
-}
+};

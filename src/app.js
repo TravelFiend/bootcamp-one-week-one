@@ -36,7 +36,7 @@ myButton.addEventListener('click', () => {
 
         let percent = Math.round((total / 3) * 100);
         if (percent < 70){
-            quizResults.style.color = "red";
+            myQuizResults.style.color = 'red';
         }
         alert(`Quiz complete!  Your score will now appear at the bottom of the webpage.`);
         myScore.textContent = `You completed the quiz ${userName}!  Your score is ${total}/3 --- ${percent}%!!!`;
